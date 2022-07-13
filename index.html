@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta char="UTF-8" />
+<meta name="viewpoint" content="width=device-width, initial-scale=1.0" />
+<title>IceBreakers..?</title>
+<link rel="stylesheet" href="materialize/css/materialize.min.css">
+<link rel="stylesheet" href="CSS/style.css" />
+
+<body>
+  <header class="header-container">
+    <h1 class="green accent-2 black-text center-align">Chatter Portal!</h1>
+    <h4>A way in (or out!) of conversation!</h4>
+  </header>
+
+  <main class="container row valign-wrapper">
+    <section id="excuse-API" class="">
+      <section class="row">
+        <section class="col m12 m6">
+          <section class="card medium">
+            <section class="card-content black-text">
+              <span class="card-title center-align">Excuses</span>
+              <article id="excuse"></article>
+            </section>
+            <section class="card-action">
+              <button id="excuseBtn" class="green accent-2 waves-effect waves-purple">New Excuse</button>
+              <button id="fvr-excuse" class="green accent-2 waves-effect waves-purple">Favorite</button>
+            </section>
+          </section>
+        </section>
+      </section>
+    </section>
+
+    <section id="trivia-API" class="">
+      <section class="row">
+        <section class="col m12 m6">
+          <section class="card medium">
+            <section class="card-content black-text">
+              <span class="card-title center-align">Trivia</span>
+              <article id="question"></article>
+            </section>
+            <section class="card-action">
+              <button id="triviaBtn" class="green accent-2 waves-effect waves-purple">New Trivia</button>
+              <button id="fvr-trivia" class="green accent-2 waves-effect waves-purple">Favorite</button>
+            </section>
+          </section>
+        </section>
+      </section>
+    </section>
+
+    <section id="funfact-API" class="">
+      <section class="row">
+        <section class="col m12 m6">
+          <section class="card medium">
+            <section class="card-content black-text">
+              <span class="card-title center-align">Fun Facts</span>
+              <article id="fact"></article>
+            </section>
+            <section class="card-action">
+              <button id="funfactBtn" class="green accent-2 waves-effect waves-purple">New Fun Fact</button>
+              <button id="fvr-fact" class="green accent-2 waves-effect waves-purple">Favorite</button>
+            </section>
+          </section>
+        </section>
+      </section>
+    </section>
+
+    <section id="pokeAPI" class="m-5">
+      <section class="row">
+        <section class="col m12 m6">
+          <section class="card medium">
+            <section class="card-content black-text">
+              <span class="card-title center-align">Pokemon</span>
+              <article id="pokemon"></article>
+            </section>
+            <section class="card-action">
+              <button id="pokeBtn" class="green accent-2 waves-effect waves-purple">Pokemon</button>
+              <button id="fvr-poke" class="green accent-2 waves-effect waves-purple">Favorite</button>
+            </section>
+          </section>
+        </section>
+      </section>
+    </section>
+  </main>
+
+  <section id="favContainer">
+
+    <button data-target="modal1" id="modal2" class="btn modal-trigger waves-effect waves-purple">Favorites</button>
+
+    <modal id="modalFav" class="modal">
+      <section class="modal-content">
+        <h4>Favorites List</h4>
+        <ul id="favList" class="favItems"></ul>
+      </section>
+      <section class="modal-footer">
+        <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
+      </section>
+    </modal>
+  </section>
+
+  <script src="materialize\js\materialize.min.js"></script>
+  <script src="./JS/script.js"></script>
+</body>
+
+</html>

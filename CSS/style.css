@@ -1,0 +1,102 @@
+body {
+  background-color: darkslateblue;
+}
+
+h1 {
+  box-shadow: 5px 15px 30px rgb(34, 212, 243) inset;
+  border-style: ridge;
+  border-color: black;
+  border-width: 6px;
+}
+
+.container {
+  display: flex;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  justify-content: space-evenly;
+}
+
+#excuse-API, #trivia-API, #funfact-API, #pokeAPI {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+  width: 350px;
+  border-style: solid;
+  border-width: 6px;
+  padding: 15px;
+  background-color: rgb(168, 104, 197);
+  box-shadow: 3px 10px 40px red inset;
+}
+
+#excuseBtn, #fvr-excuse, #triviaBtn, #fvr-trivia, #funfactBtn, #fvr-fact, #pokeBtn, #fvr-poke, #favBtn {
+  margin: 2.5px;
+  cursor: pointer;
+  font-weight: bold;
+  border-style: solid;
+  border-width: 3px;
+  background-color: #69F0AE;
+  box-shadow: 10px 5px 15px rgb(34, 212, 243) inset !important;
+}
+
+#excuse, #question, #fact, #pokemon {
+  margin: 20px;
+}
+
+#allFav {
+  display: flex;
+}
+
+.card {
+  width: 250px;
+  background: rgb(173, 112, 185);
+}
+
+.card-title {
+  color: black;
+  font-weight: bold !important;
+  text-decoration: underline;
+}
+
+.card-content {
+  font-weight: bold;
+}
+
+#favContainer {
+  display: flex;
+  justify-content: center;
+  margin: 80px;
+}
+
+.modal-trigger {
+  justify-content: center;
+  font-size: x-large;
+  font-weight: bold;
+  background-color: #69F0AE;
+  box-shadow: 5px 10px 15px rgb(34, 212, 243) inset !important;
+  border-style: solid;
+  border-width: 3px;
+  color: black;
+}
+
+.modal {
+  position: absolute;
+  left: 50%;
+  top: 40%;
+  transform: translate(-50%, -50%);
+  border-style: solid;
+  border-width: 4px;
+  overflow: scroll;
+  max-height: 300px;
+}
+
+.modal-content ul li {
+  list-style-type: disc;
+}
+
+.modal-footer {
+  position: sticky;
+  bottom: 0px;
+  background-color: aqua !important;
+}
