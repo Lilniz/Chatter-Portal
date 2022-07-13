@@ -2,17 +2,19 @@
 <html lang="en">
 <meta char="UTF-8" />
 <meta name="viewpoint" content="width=device-width, initial-scale=1.0" />
-<title>IceBreakers..?</title>
+<title>Chatter Portal</title>
 <link rel="stylesheet" href="materialize/css/materialize.min.css">
 <link rel="stylesheet" href="CSS/style.css" />
 
 <body>
+  <!-- Top of the page -->
   <header class="header-container">
-    <h1 class="green accent-2 black-text center-align">Chatter Portal!</h1>
+    <h1 class="green accent-2 black-text center-align">Chatter Portal</h1>
     <h4>A way in (or out!) of conversation!</h4>
   </header>
 
   <main class="container row valign-wrapper">
+    <!-- Card for the excuse generator -->
     <section id="excuse-API" class="">
       <section class="row">
         <section class="col m12 m6">
@@ -22,6 +24,7 @@
               <article id="excuse"></article>
             </section>
             <section class="card-action">
+              <!-- buttons for the excuse card -->
               <button id="excuseBtn" class="green accent-2 waves-effect waves-purple">New Excuse</button>
               <button id="fvr-excuse" class="green accent-2 waves-effect waves-purple">Favorite</button>
             </section>
@@ -29,7 +32,7 @@
         </section>
       </section>
     </section>
-
+    <!-- card for the trivia generator -->
     <section id="trivia-API" class="">
       <section class="row">
         <section class="col m12 m6">
@@ -39,6 +42,7 @@
               <article id="question"></article>
             </section>
             <section class="card-action">
+              <!-- buttons for the trivia card -->
               <button id="triviaBtn" class="green accent-2 waves-effect waves-purple">New Trivia</button>
               <button id="fvr-trivia" class="green accent-2 waves-effect waves-purple">Favorite</button>
             </section>
@@ -46,7 +50,7 @@
         </section>
       </section>
     </section>
-
+    <!-- card for the fun facts generator -->
     <section id="funfact-API" class="">
       <section class="row">
         <section class="col m12 m6">
@@ -56,6 +60,7 @@
               <article id="fact"></article>
             </section>
             <section class="card-action">
+              <!-- buttons for the fun facts card -->
               <button id="funfactBtn" class="green accent-2 waves-effect waves-purple">New Fun Fact</button>
               <button id="fvr-fact" class="green accent-2 waves-effect waves-purple">Favorite</button>
             </section>
@@ -63,7 +68,7 @@
         </section>
       </section>
     </section>
-
+    <!-- card for the pokemon generator -->
     <section id="pokeAPI" class="m-5">
       <section class="row">
         <section class="col m12 m6">
@@ -73,6 +78,7 @@
               <article id="pokemon"></article>
             </section>
             <section class="card-action">
+              <!-- buttons for the pokemon card -->
               <button id="pokeBtn" class="green accent-2 waves-effect waves-purple">Pokemon</button>
               <button id="fvr-poke" class="green accent-2 waves-effect waves-purple">Favorite</button>
             </section>
@@ -83,14 +89,15 @@
   </main>
 
   <section id="favContainer">
-
+    <!-- buttons to trigger the modal to pop up -->
     <button data-target="modal1" id="modal2" class="btn modal-trigger waves-effect waves-purple">Favorites</button>
-
+    <!-- this is what is contained within the modal -->
     <modal id="modalFav" class="modal">
       <section class="modal-content">
         <h4>Favorites List</h4>
         <ul id="favList" class="favItems"></ul>
       </section>
+      <!-- this is the close button at the bottom of the modal -->
       <section class="modal-footer">
         <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
       </section>
