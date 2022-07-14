@@ -1,4 +1,4 @@
-# Project1
+# Chatter Portal
 
 Webpage- https://lilniz.github.io/Chatter-Portal/#
 
