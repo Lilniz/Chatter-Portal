@@ -137,3 +137,11 @@ h4 {
 .modal-footer a {
   margin-bottom: 50px;
 }
+
+@media screen and (max-width: 1200px) {
+  .row {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+  }
+}
